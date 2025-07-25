@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Awesome Homepage</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Welcome to Raccoon-Dave!</h1>
-    </header>
-    <main>
-        <p>More content coming soon!</p>
-    </main>
-    <footer>
-        <p>&copy; 2025 Raccoon-Dave</p>
-    </footer>
-</body>
-</html>
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
 
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* space between images */
+        align-items: center;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Raccoon-Dave!</h1>
+    </header>
+    <div class="container">
+      <img src="/images/mascot.png" alt="Graphic 1" />
+      <img src="/images/email.png" alt="Graphic 2" />
+    </div>
+    <footer>
+      <p>&copy; 2025 Raccoon-Dave</p>
+    </footer>
+  </body>
+</html>
